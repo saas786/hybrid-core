@@ -101,8 +101,8 @@ class Application extends Container implements ApplicationContract, Bootable {
 		// This shouldn't need changing
 		// unless doing something really out there or just for clarity.
 		if ( ! $this->has( 'path' ) ) {
-			// Adds the directory path for the framework.
-			$this->instance( 'path', untrailingslashit( HYBRID_DIR ) );
+			// $this->instance( 'path', untrailingslashit( HYBRID_DIR ) );
+			$this->instance( 'path', untrailingslashit( dirname( __DIR__, 1 ) ) );
 		}
 
 		// Add the version for the framework.

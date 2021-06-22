@@ -19,10 +19,9 @@
  * @deprecated 6.0
  * @deprecated Use $themeslug->instance( 'path', '/path/to/hybrid-core );
  */
-if ( ! defined( 'HYBRID_DIR' ) ) {
-
-	define( 'HYBRID_DIR', __DIR__ );
-}
+// if ( ! defined( 'HYBRID_DIR' ) ) {
+// 	define( 'HYBRID_DIR', __DIR__ );
+// }
 
 # Check if the framework has been bootstrapped. If not, load the bootstrap files
 # and get the framework set up.
